@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicis Daniel Asensio</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //Exercici 1
+    console.log("Hola Mundo");
+    //Exercici 2 i 3
+    var nom="Daniel";
+    var cognom="Asensio";
+    alert(nom+" "+cognom);
+    //Exercici 4
+    var op1=2;
+    var op2=3;
+    console.log(op1+op2);
+    //Exercici 5
+    nota=Number(prompt("Dime la nota:"));
+    if (nota >= 5){
+        alert("Aprovado!");
+    }
+    else{
+        alert("Suspendido!");
+    }
+    //Exercici 6
+    var frase="Tinc un cotxe de color blau";
+    frase=frase.replace("blau","verd");
+    alert(frase);
+    frase=frase.replace(/o/g,"u");
+    alert(frase);
+    //Exercici 7
+    var articles =['taula', 'cadira', 'ordinador', 'libreta'];
+    for(x=0;x<articles.length;x++){
+        document.write("<br>L'article "+x+ " es "+articles[x]);
+    }
+    //Exercici 8
+    function calculadora(operador, valor1, valor2){
+        switch (operador){
+            case '+':
+                console.log(valor1+valor2);
+                break;
+            case '-':
+                console.log(valor1-valor2);
+                break;
+            case '*':
+                console.log(valor1*valor2);
+                break;
+            case '/':
+                console.log(valor1/valor2);
+                break;
+            default:
+            console.log("Operador no valido!");                
+        }
+    }
+
+    calculadora("*", 3,5);
+</script>
+</html>
