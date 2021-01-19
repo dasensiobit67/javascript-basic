@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lletres Repetides - Dani Asensio</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //Exercici 1 i 2
+    var vocals=['A','E','I','O','U']
+    var nom = ['D','A','N','I','E','L','I','N'];
+    var vocal=false;
+
+    for(x=0;x<nom.length;x++){
+        vocal=false;
+        for(y=0;y<vocals.length;y++){
+            if(nom[x]==vocals[y])vocal=true;
+        }
+        if(vocal){
+            console.log("<br>La lletra "+nom[x]+" es una vocal");
+        }
+        else{
+            console.log("<br>La lletra "+nom[x]+" es una consonant");
+        }
+    }
+    //Exercici 3
+    var repetida=0;
+    var myMap=[];
+    var objecte ={};
+    for(x=0;x<nom.length;x++){
+        repetida=0;
+        for(y=0;y<nom.length;y++){
+            if(nom[x]==nom[y]){
+                repetida++;
+            }
+            
+        }
+        console.log(nom[x]+" "+repetida);
+        var clave=nom[x];
+        myMap.push({key:clave, value:repetida});
+        objecte[clave]=repetida;
+        
+    }
+    console.log(myMap);
+    console.log(objecte);
+    //Exercici 4
+    var cognom=['A','S','E','N','S','I','O'];
+    var fullName=[];
+    fullName=nom.concat(" ",cognom);
+    console.log(fullName);
+</script>
+</html>
